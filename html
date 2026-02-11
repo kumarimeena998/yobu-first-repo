@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 40px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      max-width: 500px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Hello, HTML 👋</h1>
+    <p>This is a simple demo HTML page with CSS and JavaScript.</p>
+
+    <button onclick="sayHello()">Click Me</button>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    function sayHello() {
+      document.getElementById("message").textContent =
+        "You clicked the button!";
+    }
+  </script>
+
+</body>
+</html>
+
